@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#buttonfinal .btn{
+background-color: #97c93e !important; 
+color: white;
+
+
+}
+
+/*.form-select{
+    width: 400px !important;
+    height: 40px !important;
+}*/
+
+footer{
+    background-color: #1f5271;
+    height: 100px;
+    color: white;
+    padding-top: 15px;
+
+  }
+
+  
+footer ul{
+    list-style: none;
+}

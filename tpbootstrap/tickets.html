@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/tickets.css">
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous">
+    <title>Document</title>
+  </head>
+  <body>
+    <!--header-->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <img src="/img/codoacodo.png" alt="Logo" height="40"
+              class="d-inline-block align-text-top">
+            Conf Bs As
+          </a>
+
+          <div class="collapse navbar-collapse justify-content-end"
+            id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page"
+                  href="#">La conferencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Los oradores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">El lugar y la fecha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Conviértete en
+                  orador</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: green;"
+                  href="/tickets.html">Comprar tickets</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--tickets-->
+      <div class="row d-flex justify-content-center flex-wrap" id="container1">
+        <div class="flex-shrink-0 m-1 mt-4 p-3 border border-2 border-primary
+          p-2 mb-2
+          text-center" style="width: 200px;">
+          <p><b>Estudiante</b></p>
+          <p>Tienen un descuento</p>
+          <p><b>80%</b></p>
+          <p class="fw-light"><small>*presentar documentación</small></p>
+        </div>
+        <div class="flex-shrink-0 m-1 mt-4 p-3 order-5 border border-2
+          border-success
+          p-2 mb-2 text-center" style="width: 200px;">
+          <p><b>Junior</b></p>
+          <p>Tienen un descuento</p>
+          <p><b>15%</b></p>
+          <p class="fw-light"><small>*presentar documentación</small></p>
+        </div>
+        <div class="flex-shrink-0 m-1 mt-4 p-3 order-1 border border-2
+          border-warning
+          p-2 mb-2 text-center" style="width: 200px;">
+          <p><b>Trainee</b></p>
+          <p>Tienen un descuento</p>
+          <p><b>50%</b></p>
+          <p class="fw-light"><small>*presentar documentación</small></p>
+        </div>
+      </div>
+
+      <!--completar-->
+      <p class="text-center my-0">VENTA</p>
+      <h1 class="text-center mt-0">VALOR DE TICKET $200</h1>
+
+      <div class="form mx-auto" style="max-width: 800px;">
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <input type="text" class="form-control"
+              id="nombre" placeholder="Nombre" required>
+          </div>
+          <div class="col-sm-6">
+            <input type="text" class="form-control"
+              id="apellido" placeholder="Apellido" required>
+          </div>
+          <div class="col-sm-12">
+            <input type="email" class="form-control"
+              id="mail" placeholder="Correo" required>
+          </div>
+
+          <div class="mb-3 col-sm-6">
+            <label for="exampleFormControlInput1" class="form-label">Cantidad</label>
+            <input type="number" class="form-control"
+              id="cant" placeholder="cantidad" required>
+
+          </div>
+          <div class="mb-3 col-sm-6">
+            <label for="exampleFormControlInput1" class="form-label">Categoria</label>
+            <select class="form-select" id="cat" aria-label="Default select example">
+              <option value="1">Estudiantes</option>
+              <option value="2">Trainee</option>
+              <option value="3">Junior</option>
+              <option value="4">General</option>
+            </select>
+
+          </div>
+
+
+          <div class="alert alert-primary" id="total" role="alert">
+            Total a pagar: $
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-center mb-3"
+            id="buttonfinal">
+            <button class="btn col-6" id="borrar" type="submit">Borrar</button>
+            <button class="btn col-6" id="resumen" type="submit">Resumen</button>
+          </div>
+        </div>
+      </div>
+
+      <!--footer-->
+      <footer>
+        <ul class="d-flex justify-content-around align-items-center flex-wrap">
+          <li>Preguntas frecuentes</li>
+          <li>Contáctanos</li>
+          <li>Prensa</li>
+          <li>Conferencias</li>
+          <li>Términos y condiciones</li>
+          <li>Privacidad</li>
+          <li>Estudiantes</li>
+        </ul>
+      </footer>
+
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"></script>
+    
+      <script src="/js/tickets.js"></script>
+  </body>
+</html>
